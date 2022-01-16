@@ -11,7 +11,7 @@ describe('Home Screen', () => {
     await expect(element(by.id('welcome'))).toBeVisible();
   });
 
-  it('check register a new skill', async () => {
+   it('check register a new skill', async () => {
     const inputNewSkill = await element(by.id('input-new'));
     const buttonAdd = await element(by.id('button-add'));
     const flatListSkills = await element(by.id('flat-list-skills'));
@@ -23,5 +23,5 @@ describe('Home Screen', () => {
     await flatListSkills.tap();
 
     expect(element(by.id('flat-list-skills'))).toBeVisible();    
-  });
+  }); 
 });
